@@ -8,3 +8,33 @@ let tasks = [];
 //cashed elements refs
 const taskForm = document.getElementById("taskForm")
 const taskTable = document.getElementById("taskTable")
+
+//funcs
+//submission handler
+function handleSubmission(e) {
+  e.preventDefault()
+  //
+  let taskName = document.getElementById("taskName")
+  let taskDesc = document.getElementById("taskDescription")
+  let taskDeadline = document.getElementById("taskDeadline")
+  //validate input fields
+  // this can be achieved by putting "required" into the form element in the html file.
+
+  //update task arrays
+  tasks.push({
+    name: taskName,
+    description: taskDesc,
+    deadline: taskDeadline
+  })
+  render();
+}
+
+function render() {
+
+}
+
+function init() {
+  taskTable.innerHTML = '';
+  tasks = []
+  render();
+}
