@@ -49,3 +49,6 @@ function init() {
   tasks = []
   render();
 }
+
+taskForm.addEventListener('submit', handleSubmission)
+init();

@@ -13,11 +13,11 @@
 
       <form id="taskForm">
         <label for="name" id="taskName">Task</label>
-        <input type="text" name="name" id="taskName">
+        <input type="text" name="name" id="taskName" required>
         <label for="desc" id="taskDescription">Description</label>
         <input type="text" name="desc" id="taskDescription">
         <label for="deadline" id="taskDeadline"></label>
-        <input type="date" name="deadline" id="taskDeadline">
+        <input type="date" name="deadline" id="taskDeadline" required>
         <button type="submit">Add Task</button>
       </form>
       <table id="taskTable"></table>
